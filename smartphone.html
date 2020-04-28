@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone Page</title>
+    <link rel="stylesheet" href="smartphone.css">
+</head>
+
+<body>
+    <!-- wrap header content footer -->
+    <div class="app">
+        <div class="header">
+
+        </div>
+        <div class="content">
+            <!-- ol>li*5, ol is ordered list, li is a list -->
+            <ul>
+                <li>
+                    <!-- src = pic directory, alt if pic no show, show the alt text  -->
+                    <a href="https://www.facebook.com">
+                        <img class="icon" src="images/facebook.svg" alt="Facebook">
+                    </a>
+                    <p>Facebook</p>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com">
+                        <img class="icon" src="images/instagram.svg" alt="instagram">
+
+                    </a>
+                    <p>Instagram</p>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com">
+                        <div class="whitewrap">
+                            <img src="images/youtube.svg" alt="Youtube">
+                        </div>
+                    </a>
+                    <p>Youtube</p>
+                </li>
+                <li>
+                    <a href="https://www.spotify.com">
+                        <div class="whitewrap">
+                            <img class="icon" src="images/logo.svg" alt="Spotify">
+                        </div>
+                    </a>
+                    <p>Spotify</p>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com">
+                        <img class="icon" src="images/twitter.svg" alt="Twitter">
+                    </a>
+                    <p>Twitter</p>
+                </li>
+                <li>
+                    <a href="https://www.google.com">
+                        <div class="whitewrap">
+                            <img class="icon" src="images/chrome.svg" alt="Chrome">
+                        </div>
+                    </a>
+                    <p>Chrome</p>
+                </li>
+                <li>
+                    <a href="https://www.google.com/mail">
+                        <div class="whitewrap">
+                            <img class="icon" src="images/gmail.svg" alt="Gmail">
+                        </div>
+                    </a>
+                    <p>Gmail</p>
+                </li>
+                <li>
+                    <img class="icon" src="images/notes.svg" alt="Notes">
+                    <p>Notes</p>
+                </li>
+                <li>
+                    <a href="https://www.google.com/drive">
+                        <div class="whitewrap">
+                            <img class="icon" src="images/google-drive.svg" alt="google-drive">
+                        </div>
+                    </a>
+                    <p>Drive</p>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com">
+                        <div class="whitewrap">
+                            <img class="icon" src="images/linkedin.svg" alt="Linkedin">
+                        </div>
+                    </a>
+                    <p>Linkedin</p>
+                </li>
+                <li>
+                    <a href="https://www.google.com/maps">
+                        <div class="whitewrap">
+                            <img class="icon" src="images/google-maps.svg" alt="google-maps">
+                        </div>
+                    </a>
+                    <p>Maps</p>
+                </li>
+                <li>
+                    <a href="https://www.google.com/calendar">
+                        <div class="whitewrap">
+                            <img class="icon" src="images/calendar.svg" alt="Calendar">
+                        </div>
+                    </a>
+                    <p>Calendar</p>
+                </li>
+                <li>
+                    <div class="whitewrap">
+                        <img class="icon folder-icon" src="images/folder.svg" alt="Folder">
+                    </div>
+                    <p>Folder</p>
+                </li>
+                <li>
+                    <div class="whitewrap" onclick="showLockPage();">
+                        <img class="icon" src="images/lock.svg" alt="locker">
+                    </div>
+                    <p>Locker</p>
+                </li>
+                <li>
+                    <div class="whitewrap">
+                        <img class="icon" src="images/setting.svg" alt="setting">
+                    </div>
+                    <p>Setting</p>
+                </li>
+                <li>
+                    <a href="https://www.line.com">
+                        <img class="icon" src="images/line.svg" alt="LINE">
+                    </a>
+                    <p>LINE</p>
+                </li>
+                <li>
+                    <a href="https://www.whatsapp.com">
+
+                        <img class="icon" src="images/whatsapp.svg" alt="whatsapp">
+
+                    </a>
+                    <p>whatsapp</p>
+                </li>
+                <li>
+                    <div class="whitewrap">
+                        <img class="icon" src="images/gallery.svg" alt="Skype">
+                    </div>
+                    <p>Skype</p>
+                </li>
+                <li>
+
+                    <img class="icon" src="images/camera.svg" alt="camera">
+                    <p>Camera</p>
+                </li>
+                <li>
+                    <a href="https://www.telegram.com">
+                        <img class="icon" src="images/telegram.svg" alt="telegram">
+
+                    </a>
+                    <p>Telegram</p>
+                </li>
+                <li>
+                    <a href="https://www.skype.com">
+                        <img class="icon" src="images/skype.svg" alt="Skype">
+                    </a>
+                    <p>Skype</p>
+                </li>
+                <li>
+                    <a href="https://play.google.com/store">
+                        <div class="whitewrap">
+                            <img class="icon" src="images/playstore.svg" alt="playstore">
+                        </div>
+                    </a>
+                    <p>Play Store</p>
+                </li>
+
+
+            </ul>
+            <div class="lock-page" onclick="showHomePage()">
+                <!-- <img class="lock-screen" src="images/locker.svg" alt="" onclick="showHomePage();"> -->
+                <div class="renderTime" onload="startTime()"></div>
+                <div class="renderDate" onload="startDate()"></div>
+                <div class="swipeup"></div>
+            </div>
+        </div>
+
+        <ul></ul>
+        <!-- <div class="popup">
+                <img calss="folderPage" src="images/insideFolder.svg" alt="inside-folder">
+
+            </div> -->
+
+
+
+        <!-- iframe -->
+        <div class="footer">
+            <button class="homebutton" onclick="showHomePage()">
+            </button>
+        </div>
+    </div>
+
+
+    <script src="smartphone.js"></script>
+</body>
+
+</html>
